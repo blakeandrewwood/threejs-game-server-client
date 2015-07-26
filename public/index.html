@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+
+        <div class="gui">
+
+          <!-- Stats -->
+          <ul class="stats">
+            <li>
+              <h1>Connection:<h1>
+              <h1 id="stats-connection" class="fg-green-light">Connected</h1>
+            </li>
+            <li>
+              <h1>Server:</h1>
+              <h1 id="stats-server" class="fg-magenta-light">Us.0</h1>
+            </li>
+            <li>
+              <h1>Latency:<h1>
+              <h1 id="stats-latency" class="fg-green-light">0</h1>
+            </li>
+            <li>
+              <h1>FPS:<h1>
+              <h1 id="stats-fps" class="fg-green-light">0</h1>
+            </li>
+            <li>
+              <h1>Players:<h1>
+              <h1 id="stats-players" class="fg-green-light">0</h1>
+            </li>
+          </ul>
+          <!-- Stats End -->
+
+          <!-- Join -->
+          <form id="join" class="join">
+            <h1>Welcome, thanks for the help!</h1>
+            <input id="name" type="text" placeholder="Username" required>
+            <input type="text" placeholder="Email" disabled>
+            <input type="password" placeholder="Password" disabled>
+            <input type="submit" value="Join">
+          </form>
+          <!-- Join End -->
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="bower_components/threejs/build/three.js"></script>
+        <script src="scripts/core/Cubes.js"></script>
+        <script src="scripts/input/KeyboardState.js"></script>
+        <script src="scripts/network/Stats.js"></script>
+        <script src="scripts/network/Data.js"></script>
+        <script src="scripts/network/Socket.js"></script>
+        <script src="scripts/input/Input.js"></script>
+        <script src="scripts/camera/Camera.js"></script>
+        <script src="scripts/world/Lights.js"></script>
+        <script src="scripts/world/World.js"></script>
+        <script src="scripts/client/Client.js"></script>
+        <script src="scripts/client/Player.js"></script>
+        <script src="scripts/core/Engine.js"></script>
+        <script src="scripts/core/Main.js"></script>
+        <!-- Scripts End -->
+
+    </body>
+</html>
