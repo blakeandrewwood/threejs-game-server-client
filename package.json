@@ -7,6 +7,9 @@
   },
   "author": "Blake A. Wood",
   "license": "ISC",
+  "engines": {
+    "node": "0.10.x"
+  },
   "dependencies": {
     "express": "^4.13.1",
     "socket.io": "^1.3.6"
