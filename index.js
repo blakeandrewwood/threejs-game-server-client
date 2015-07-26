@@ -5,6 +5,7 @@ var io = require('socket.io', {
   rememberTransport: false,
   transports: ['WebSocket', 'Flash Socket', 'AJAX long-polling']
 })(server);
+
 var path = require('path');
 var port = process.env.PORT || 3000;
 
